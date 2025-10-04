@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Inredning AB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home'); return false;">Hem</a></li>
+                <li><a href="#about" onclick="showSection('about'); return false;">Om mig</a></li>
+                <li><a href="#contact" onclick="showSection('contact'); return false;">Kontakt</a></li>
+                <li><a href="#projects" onclick="showSection('projects'); return false;">Projekt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Inredning med känsla och karaktär</h1>
+    <main>
+        <section id="home" class="active">
+            <h2>Hem</h2>
+            <p>Ett hem är mer än bara väggar och möbler- det är känslan som gör skillnaden. Här fins information för att skapa vackra och personliga rum, där varje detalj bidrar till en harmonisk helhet. Med rätt kombination av färger, former och material blir hemmet en plats som speglar både stil och atmosfär, och som alltid bjuder in till trivsel och ro.</p>
+            <img src="img/istockphoto-1390844507-612x612.jpg" alt="Inredning" class="img-standard">
+            <p>Små förändringar kan göra stor skillnad. En ny färg på väggen, ett mönstrat textilval eller några välplacerade ljuskällor kan ge rummet nytt liv. Här handlar det om att hitta balans mellan funktion och estetik- där praktiska lösningar möter detaljer som sätter stämningen.</p>
+            <p>Med rätt detaljer blir hemmet både mysigt och personligt. En mjuk filt i soffan, tända ljus i hörnet eller gröna växter på fönsterbrädan skapar genast en varm känsla. Här finns inspiration till enkla lösningar, kreativa idéer och smarta tips för att skapa trivsel i vardagen.</p>
+            <img src="img/pexels-kathekth-3049121.jpg" alt="Inredningsdetalj" class="img-center">
+            <ul class="list-margin">
+                <li>Mysfaktor med textiler – lägg till en mjuk filt, några extra kuddar eller en matta för att skapa värme.</li>
+                <li>Ljuset sätter stämningen – levande ljus, små lampor eller ljusslingor ger rummet en ombonad känsla.</li>
+                <li>Gröna inslag – växter gör hemmet levande och bidrar till en lugnare atmosfär.</li>
+                <li>Lek med färger och detaljer – små förändringar i färg eller dekoration kan ge nytt liv åt ett rum.</li>
+            </ul>
+            <img src="img/pexels-leticia-alvares-1805702-32832333.jpg" alt="Inredningsdetalj 2" class="img-float-right">
+            <form action="#" method="post" enctype="multipart/form-data" class="form-center"></form>
+        </section>
+        <section id="about">
+            <h2>Om mig</h2>
+            <p>Inredning AB är ett företag jag tänkt skapa i framtiden där jag ger inspiration och idéer. Min vision är att varje hem och arbetsplats ska spegla människorna som vistas där- med en personlig känsla, harmoni och smarta lösningar. På denna sida delas inspiration som hjälper användare att förvandla sina rum till platser som känns både vackra och välkomnande.</p>
+            <p>Jag är en 21 årig student från Stockholm som studerar UX-design vid Linnéuniversitet i Kalmar. Jag har en stark passion för allt som rör design. Min utbildning fokuserar främst på att utveckla användarupplevelser inom teknik, men utöver det har jag även ett stort intresse för fysisk design och hur det kan påverka människors vardag. </p>
+            <p>Genom Inredning AB vill jag kombinera  min kreativa bakgrund med mitt intresse för människor och deras behov. Jag tror att bra design inte handlar om trender eller dyra lösningar, utan om att skapa miljöer där man trivs och kan vara sig själv. Därför strävar jag efter att lyfta fram det personliga i varje projekt och visa hur även små förändringar kan göra stor skillnad. Mitt mål är att inspirera och guida andra till att se potentialen i sin a egna rum och skapa inredning som håller över tid.</p>            
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+                    <ul class="list-margin">
+                        <li>E-postadress: kontakt@inredningab.se</li>
+                        <li>Telefonnummer: 00 000 0000</li>
+                        <li>Plats/ort: Bas i Stockholm</li>
+                    </ul>
+                <p>Har du frågor, idéer eller vill du samarbeta? Hör gärna av dig!</p>
+            <img src="img/pexels-olha-ruskykh-7504896.jpg" alt="Kontakt" class="img-large-center">
+        </section>
+        <section id="projects">
+            <h2>Projekt</h2>
+            <p>Här kommer jag att visa upp några av mina inredningsprojekt och idéer. Från små förändringar till större renoveringar- allt för att inspirera och visa hur du kan skapa ett hem med både stil och funktion.</p>
+            <img src="img/pexels-pixabay-159045.jpg" alt="Projekt" class="img-large-center">
+        </section>
+ 
+    </main>
+    <footer>         
+        <p>&copy; Riam, 2025 Inredning AB.</p>
+    </footer>    
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(function(sec) {
+                sec.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
